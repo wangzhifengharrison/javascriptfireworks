@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+
+	<!--
+	If you have no access to the internet, the cdnjs.cloudflare.com links above
+	(and therefore your sketch) won't work.
+
+	If you want to be able to work offline, you will need to download the p5
+	resource libraries library (e.g. from the CECS gitlab at
+	<https://gitlab.cecs.anu.edu.au/comp1720/2018/p5-local-mirror>) and place them
+	in the `lib` folder of this project. Then, you can remove the <script> tags
+	above and replace them with the (currently commented-out) ones below:
+
+	<script src="lib/p5/p5.js"></script>
+	<script src="lib/p5/addons/p5.dom.js"></script>
+	<script src="lib/p5/addons/p5.sound.js"></script>
+    -->
+    <!-- test link -->
+    <!-- http://comp1720.cecs.anu.edu.au/u6068466/comp1720-2018-major-project/ -->
+
+    <script src="sketch.js"></script>
+    <script src="firework.js"></script>
+    <script src="backhome.js"></script>
+    <script src="particle_font.js"></script>
+    <script src="particle_original.js"></script>
+    <script src="house.js"></script>
+    <script src="couplet.js"></script>
+    <script src="luckmoney.js"></script>
+    <script src="luckmoneyhouse.js"></script>
+    <script src="luckmoneyhousegetmoney.js"></script>
+    <script src="big_meal.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  
+	<!-- Add any extra scripts to the 'lib' folder and append it like:
+	<script src="lib/example-p5-library.js"></script>
+	-->
+
+	<!-- CSS Styling, added hidden overflow to remove scrollbars -->
+	<style> body {padding: 0; margin: 0; overflow: hidden;} </style>
+    <style>
+     body {
+         padding: 0;
+         margin: 0;
+     }
+     nav {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         font-size: 24px;
+         color: #eee;
+         background-color: #222;
+         padding: 20px;
+         opacity: 0.5;
+         transition: opacity 0.3s;
+		font-family: sans-serif;
+
+     }
+     nav > a {
+         color: #eee;
+     }
+     nav:hover {
+         opacity: 1;
+     }
+    </style>
+
+  </head>
+  <body>
+        <div>
+                <input id="inputWord" type="text" value="WINNER" maxlength="14">
+              </div>
+    <nav><a href=".." style="text-decoration: none;">back to gallery</a></nav>
+    
+  
+  </body>
+</html>
